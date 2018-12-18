@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 3</title>
+</head>
+
+<body ng-controller="voituresCtrl">
+  <div ng-repeat="voitures in voiture |filter: 'verte'"> <!--filter: {couleur: 'verte'}"> (permet aisi de filtrer seulement les couleurs et pas tt le tableau)-->
+    {{voitures.marque}} - {{voitures.couleur}}
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
